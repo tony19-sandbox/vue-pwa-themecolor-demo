@@ -1,24 +1,12 @@
-# vue-pwa-themecolor-demo
+> Demo for https://stackoverflow.com/questions/64608853/vue-js-generate-manifest-json-with-env-variables
 
-## Project setup
-```
-npm install
-```
+Configure PWA theme color with an environment variable (e.g., `MY_VARIABLE` in `.env`):
 
-### Compiles and hot-reloads for development
+```js
+// vue.config.js
+module.exports = {
+  pwa: {
+    themeColor: process.env.MY_VARIABLE,
+  }
+}
 ```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
